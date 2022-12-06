@@ -1,0 +1,14 @@
+{
+  "development": {
+    "clientPath": "http://localhost:3000",
+    "serverPath": "http://localhost:3001/api"
+  },
+  "staging": {
+    "clientPath": "http://localhost:3000",
+    "serverPath": "http://localhost:3001/api"
+  },
+  "production": {
+    "clientPath": "http://localhost:3001/api",
+    "serverPath": "http://localhost:3001/api"
+  }
+}

@@ -1,5 +1,5 @@
+import logo from "../src/assets/icons/logo.svg";
 import "./App.css";
-import logo from "./src/assets/icons/logo.svg";
 
 function App() {
   console.log("ENV", process.env.REACT_APP_ENV);
