@@ -1,8 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 const authSchema = {
-  user: {},
-  setUser: () => {},
+    user: {},
+    setUser: () => {},
 };
 
 const AuthContext = createContext(authSchema);

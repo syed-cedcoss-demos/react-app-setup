@@ -1,4 +1,4 @@
-import ErrorBoundary from "../errors/ErrorBoundary";
+import ErrorBoundary from '../errors/ErrorBoundary';
 
 const Layout = ({ children }: any) => {
   return (
