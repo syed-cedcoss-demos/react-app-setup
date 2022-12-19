@@ -1,12 +1,16 @@
-# Clone App to get started
+# CedCommerce new React app setup
+
+## Clone App to get started
 
 ## Available Scripts
 
+```sh
 Ste-1: In the project directory
 
-### `npm i`
+npm i
 
 Ste-2: In the project directory
 
-### `npm start`
+npm start
+```
 
