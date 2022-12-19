@@ -2,11 +2,11 @@
 
 ## Available Scripts
 
-1-In the project directory, you can run:
+Ste-1: In the project directory
 
 ### `npm i`
 
-2-In the project directory, you can run:
+Ste-2: In the project directory
 
 ### `npm start`
 
