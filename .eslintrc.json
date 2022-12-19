@@ -16,6 +16,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "off",
     "react/prop-types": "off",
+    "no-unused-vars": "off",
     "semi" : "warn",
     "space-before-blocks" : "warn",
     "space-before-function-paren" : "off",

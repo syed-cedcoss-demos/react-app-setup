@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import React, { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AuthRoutes from './components/navigation/AuthRoutes';
 import ProtectedRoutes from './components/navigation/ProtectedRoutes';
