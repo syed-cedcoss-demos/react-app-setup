@@ -1,17 +1,16 @@
-import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 import { getOrderCount, getProductCount } from './AsyncActions';
 
-export interface BoardingSlice {
+export interface BoardingSliceProps {
   value: {
-    data: {};
+    data: any;
     step: number;
   };
   loading: boolean;
   msg: string;
 }
 
-const initialState: BoardingSlice = {
+const initialState: BoardingSliceProps = {
   value: {
     data: {},
     step: 0,
