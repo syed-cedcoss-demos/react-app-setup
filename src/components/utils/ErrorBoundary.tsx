@@ -1,4 +1,4 @@
-import { Card, PageHeader } from '@cedcommerce/ounce-ui';
+import React, { Card, PageHeader } from '@cedcommerce/ounce-ui';
 import { Component } from 'react';
 
 class ErrorBoundary extends Component<any, any> {

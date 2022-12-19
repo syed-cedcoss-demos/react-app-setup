@@ -1,6 +1,6 @@
 interface optionsProps {
   url: string;
-  body?: {};
+  body?: any;
 }
 
 export const getCall = async (data: optionsProps) => {

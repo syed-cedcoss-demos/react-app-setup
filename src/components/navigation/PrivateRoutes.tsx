@@ -1,4 +1,4 @@
-import { Navigate, Outlet } from 'react-router-dom';
+import React, { Navigate, Outlet } from 'react-router-dom';
 
 const PrivateRoutes = () => {
   const auth = true;

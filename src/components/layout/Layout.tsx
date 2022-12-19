@@ -1,9 +1,9 @@
-import ErrorBoundary from '../utils/ErrorBoundary';
+import React from 'react';
 
 const Layout = ({ children }: any) => {
   return (
     <div>
-      <ErrorBoundary>{children}</ErrorBoundary>
+      <>{children}</>
     </div>
   );
 };
