@@ -7,7 +7,7 @@ const Welcome = () => {
   setTimeout(() => {
     navigate('/onboarding/9384u90284902834/step1');
   }, 900000);
-  return <Onboard title="Welcome Onboard" />;
+  return <Onboard title="Welcome to onboard" />;
 };
 
 export default Welcome;
