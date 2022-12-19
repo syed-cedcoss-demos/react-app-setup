@@ -8,5 +8,5 @@
 
 2-In the project directory, you can run:
 
-### `npm run start:development`
+### `npm start`
 
