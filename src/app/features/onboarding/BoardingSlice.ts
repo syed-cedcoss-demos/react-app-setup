@@ -32,7 +32,7 @@ export const BoardingSlice = createSlice({
   extraReducers(builder) {
     builder
       //getting completed step
-      .addCase(getOrderCount.pending, (state, action) => {
+      .addCase(getOrderCount.pending, (state) => {
         state.loading = true;
         state.msg = 'Pending';
       })
@@ -41,12 +41,12 @@ export const BoardingSlice = createSlice({
         state.msg = 'Success';
         state.value.step = action.payload?.data;
       })
-      .addCase(getOrderCount.rejected, (state, action) => {
+      .addCase(getOrderCount.rejected, (state) => {
         state.loading = false;
         state.msg = 'Failed';
       })
       //getting connected profile
-      .addCase(getProductCount.pending, (state, action) => {
+      .addCase(getProductCount.pending, (state) => {
         state.loading = true;
         state.msg = 'Pending';
       })
@@ -55,7 +55,7 @@ export const BoardingSlice = createSlice({
         state.msg = 'Success';
         state.value.data = action.payload?.data;
       })
-      .addCase(getProductCount.rejected, (state, action) => {
+      .addCase(getProductCount.rejected, (state) => {
         state.loading = false;
         state.msg = 'Failed';
       });

@@ -15,8 +15,7 @@ export const getCall = async (data: optionsProps) => {
     const res = await fetch(data?.url, options);
     const result: any = await res.json();
     if (result?.code === 'token_expired') {
-      sessionStorage.setItem('token_expired', 'token_expired');
-      window.location.href = window.location.origin + '/token-expire';
+      //redirect token expire page
     }
     return result;
   } catch (error) {
@@ -37,8 +36,7 @@ export const postCall = async (data: optionsProps) => {
     const res = await fetch(data?.url, options);
     const result: any = await res.json();
     if (result?.code === 'token_expired') {
-      sessionStorage.setItem('token_expired', 'token_expired');
-      window.location.href = window.location.origin + '/token-expire';
+      //redirect token expire page
     }
     return result;
   } catch (error) {

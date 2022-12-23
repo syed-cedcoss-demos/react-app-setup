@@ -50,17 +50,17 @@ export const AuthSlice = createSlice({
   //for async action
   extraReducers(builder) {
     builder
-      .addCase(getLogin.pending, (state, action) => {
-        // state.loading = true;
+      .addCase(getLogin.pending, (state) => {
+        state.loading = true;
         state.msg = 'Pending';
       })
       .addCase(getLogin.fulfilled, (state, action) => {
-        // state.loading = false;
+        state.loading = false;
         state.msg = 'Success';
         state.value.token = action.payload?.data?.token;
       })
-      .addCase(getLogin.rejected, (state, action) => {
-        // state.loading = false;
+      .addCase(getLogin.rejected, (state) => {
+        state.loading = false;
         state.msg = 'Failed';
       });
 

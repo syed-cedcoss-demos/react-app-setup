@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { lazy, Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Signup from '../auth/Signup';
 const Login = lazy(() => import('../auth/Login'));

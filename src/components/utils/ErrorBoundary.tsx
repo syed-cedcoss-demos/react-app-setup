@@ -6,7 +6,7 @@ class ErrorBoundary extends Component<any, any> {
     super(props);
     this.state = { hasError: false, message: '' };
   }
-  static getDerivedStateFromError(error: any) {
+  static getDerivedStateFromError() {
     //update state so the next render will show the fallback UI.
     return { hasError: true };
   }
