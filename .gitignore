@@ -1,15 +1,9 @@
-# dependencies
+# folders
 /node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
 /build
 
-# misc
+#files
+.npmrc
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
