@@ -7,6 +7,7 @@ import ErrorBoundary from './components/utils/ErrorBoundary';
 
 function App() {
   console.log('ENV', process.env.REACT_APP_ENV);
+
   return (
     <ErrorBoundary>
       <Routes>

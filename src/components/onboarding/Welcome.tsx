@@ -1,5 +1,3 @@
-import { Onboard } from '@cedcommerce/ounce-ui';
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Welcome = () => {
@@ -7,7 +5,7 @@ const Welcome = () => {
   setTimeout(() => {
     navigate('/onboarding/9384u90284902834/step1');
   }, 900000);
-  return <Onboard title="Welcome to onboard" />;
+  return <main title="Welcome to onboard" />;
 };
 
 export default Welcome;

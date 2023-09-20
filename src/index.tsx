@@ -1,4 +1,3 @@
-import '@cedcommerce/ounce-ui/dist/index.css';
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';

@@ -1,4 +1,3 @@
-import React, { Card, PageHeader } from '@cedcommerce/ounce-ui';
 import { Component } from 'react';
 
 class ErrorBoundary extends Component<any, any> {
@@ -22,8 +21,8 @@ class ErrorBoundary extends Component<any, any> {
     if (this.state.hasError) {
       return (
         <>
-          <PageHeader title="Something went wrong" />
-          <Card>
+          <main title="Something went wrong" />
+          <div>
             <div className="inte-flex intel-flex--align-center intel-flex--distribute-center inte-flex--spacing-Extraloose inte-flex--vertical     ">
               <div className="inte-flex__item">
                 <img
@@ -49,7 +48,7 @@ class ErrorBoundary extends Component<any, any> {
                 </button>
               </div>
             </div>
-          </Card>
+          </div>
         </>
       );
     }
