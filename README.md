@@ -1,4 +1,4 @@
-# CedCommerce new React app setup
+# minimal & clean react app setup
 
 ## Clone App to get started
 
@@ -13,4 +13,3 @@ Ste-2: In the project directory
 
 npm start
 ```
-

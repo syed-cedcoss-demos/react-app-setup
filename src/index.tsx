@@ -1,25 +1,25 @@
-import React, { lazy, Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode, Suspense, lazy } from 'react';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store } from './app/store';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = createRoot(document.getElementById('root') as HTMLElement);
 const App = lazy(() => import('./App'));
-const persistor = persistStore(store);
+const persister = persistStore(store);
 
 root.render(
-  <React.StrictMode>
-    <BrowserRouter basename={process.env.route ?? ''}>
-      <PersistGate loading={null} persistor={persistor}>
+  <StrictMode>
+    <BrowserRouter>
+      <PersistGate loading={null} persistor={persister}>
         <Provider store={store}>
-          <Suspense fallback={<></>}>
+          <Suspense fallback={<>Loading...</>}>
             <App />
           </Suspense>
         </Provider>
       </PersistGate>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );
