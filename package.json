@@ -1,15 +1,19 @@
 {
-  "name": "app-setup",
-  "version": "0.1.0",
+  "name": "react-app-setup",
+  "version": "1.0.0",
   "private": true,
-   "scripts": {
+  "description": "",
+  "main": "index.js",
+  "scripts": {
     "start": "env-cmd -f ./envs/.env.development react-scripts start",
     "build:development": "env-cmd -f ./envs/.env.development react-scripts build",
     "build:staging": "env-cmd -f ./envs/.env.staging react-scripts build",
     "build:production": "env-cmd -f ./envs/.env.production react-scripts build",
     "prepare": "husky install",
-     "lint": "eslint --fix ."
+    "lint": "eslint --fix ."
   },
+  "author": "Syed Hasnain Mehadi",
+  "license": "MIT",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "^20.6.3",
@@ -23,16 +27,17 @@
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",
     "typescript": "^4.9.5"
-  }, 
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-  "engines" : { 
-    "npm" : ">=8.0.0 <9.8.1",
-    "node" : ">=16.0.0 <18.18.0"
+  "engineStrict": true,
+  "engines": {
+    "npm": ">=8.0.0 <9.8.1",
+    "node": ">=16.0.0 <18.18.0"
   },
   "browserslist": {
     "production": [
